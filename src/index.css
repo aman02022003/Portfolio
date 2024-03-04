@@ -412,6 +412,11 @@ b{
   margin: 0px 25px 50px 25px;
   transition: 0.5s;
 }
+
+.projectBox h3{
+ overflow: hidden;
+}
+
 .projectBox:hover{
   transform: scale(1.05);
   box-shadow: 0 4px 10px 0 #431f47;
@@ -498,20 +503,34 @@ footer h4{
   font-weight: 500;
 }
 
-.footerLinks{
+.links{
+
   display: flex;
-  width: 180px;
-  font-size: 18px;
+  flex-direction: column;
+  width: 280px;
+  font-size: 25px;
   justify-content: space-evenly;
+  
+ 
+  
 }
 
-.footerLinks a{ 
+.links a{ 
   text-decoration: none;
   color: inherit;
+  margin-top: 16px;
+  
+ 
+
+}
+
+.links a:hover{ 
+  color: purple;
 }
 
 @media(max-width:750px){
   footer{
     height: 110px;
+    
   }
 }

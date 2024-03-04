@@ -1,10 +1,11 @@
 import React from 'react';
-import Lottie from  "lottie-react";
-import SpaceBoy from "../LottieFiles/SpaceBoy.json";
 import Typed from "./Typed.js";
 import Tilt from 'react-parallax-tilt';
-import Avatar from '../images/Avatar.png';
-import {CiCoffeeCup} from "react-icons/ci";
+import Avatar from '../images/Avatar.jpg';
+import {FaGithub, FaLinkedin} from "react-icons/fa";
+import {GrMail} from "react-icons/gr";
+import {  SiCodingninjas} from "react-icons/si"
+
 
 const Home = () => {
   return (
@@ -13,30 +14,30 @@ const Home = () => {
 
         <div className='HomeText'>
           <h1>Hi There!</h1>
-          <h1>I'M <b>DEVANSH SAHNI</b></h1>
+          <h1>I'M <b>Aman Prajapati</b></h1>
           <Typed/>   
         </div>
 
-        <Lottie 
-          className="illustration" 
-          animationData={SpaceBoy} 
-          loop={true} 
-        />
+        <div className='links'>
+        <a href="https://github.com/aman02022003" target='_blank'>Github Profile : <FaGithub/></a>
+        <a href="https://www.codingninjas.com/studio/profile/aman02" target="_blank">Coding ninjas profile : <SiCodingninjas/></a>
+        <a href="https://www.linkedin.com/in/aman-prajapati02/" target='_blank'>Linkedin Profile : <FaLinkedin/></a>
+        <a href='mailTo:amanprajapati02022003@gmail.com' target='_blank'>Email id : <GrMail/></a>
+      </div>
         
       </div>
 
       <div className='AboutPage'>
         <div className='AboutText'>
-          <h1 className='AboutTextHeading'>Brief <b>introduction</b></h1>
+          <h1 className='AboutTextHeading'><b>About me</b></h1>
           <p>
-            I love the process of changing a raw idea into a website or a product 
-            that impacts lives. 
-            I want to do work that challenges me as a developer & work that I can 
-            be proud of.<br /><br />
-            I am fluent in <b>C++</b> and know a bit of <b>Python</b> and am working on a few 
-            projects in the <b>MERN</b> stack.<br />
-            I plan to learn <b>Next.js</b>, <b>Three.js</b> and<b> Typescript</b> in the near future. <br /><br />
-            Also, I love <b>coffee</b> <CiCoffeeCup style={{scale:"1.5", rotate:"15deg"}}/>   
+            I love to solve Data Structures and Algorithms (DSA) problems using c++ programming language 
+            i solved 300+ DSA problem on coding ninjas platform 
+            <br /><br />
+            Also <b>i love to do Development </b> i Developed many Projects using <b>MERN</b> stack 
+            <br />
+            I am fluent in <b>DSA using C++</b> and know a bit of <b>java</b> <br />
+   
           </p>
         </div>
         <Tilt>
